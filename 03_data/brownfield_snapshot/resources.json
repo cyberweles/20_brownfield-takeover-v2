@@ -1,0 +1,85 @@
+[
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-core/providers/Microsoft.Network/virtualNetworks/vnet-prod-core",
+    "name": "vnet-prod-core",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "westeurope",
+    "resourceGroup": "rg-prod-core",
+    "tags": { "env": "prod", "owner": "platform", "costCenter": "cc100", "service": "core" },
+    "properties": { "addressSpace": { "addressPrefixes": ["10.10.0.0/16"] } }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-core/providers/Microsoft.Network/publicIPAddresses/pip-prod-legacy",
+    "name": "pip-prod-legacy",
+    "type": "Microsoft.Network/publicIPAddresses",
+    "location": "westeurope",
+    "resourceGroup": "rg-prod-core",
+    "tags": { "env": "prod", "costCenter": "cc100" },
+    "properties": { "publicIPAllocationMethod": "Static", "sku": { "name": "Standard" } }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-core/providers/Microsoft.Storage/storageAccounts/stprodcoredat01",
+    "name": "stprodcoredat01",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "westeurope",
+    "resourceGroup": "rg-prod-core",
+    "tags": { "env": "prod", "owner": "platform", "costCenter": "cc100" },
+    "properties": {
+      "minimumTlsVersion": "TLS1_0",
+      "allowBlobPublicAccess": true,
+      "publicNetworkAccess": "Enabled"
+    },
+    "sku": { "name": "Standard_LRS" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-shared-ops/providers/Microsoft.OperationalInsights/workspaces/log-ops-shared",
+    "name": "log-ops-shared",
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "location": "westeurope",
+    "resourceGroup": "rg-shared-ops",
+    "tags": { "env": "shared", "owner": "ops", "costCenter": "cc999" },
+    "properties": { "retentionInDays": 180, "workspaceCapping": { "dailyQuotaGb": 50 } },
+    "sku": { "name": "PerGB2018" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-apps/providers/Microsoft.KeyVault/vaults/kv-prod-apps",
+    "name": "kv-prod-apps",
+    "type": "Microsoft.KeyVault/vaults",
+    "location": "westeurope",
+    "resourceGroup": "rg-prod-apps",
+    "tags": { "env": "prod", "costCenter": "cc200" },
+    "properties": { "enableRbacAuthorization": true, "publicNetworkAccess": "Enabled" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-apps/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uami-prod-app",
+    "name": "uami-prod-app",
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "location": "westeurope",
+    "resourceGroup": "rg-prod-apps",
+    "tags": { "env": "prod" },
+    "properties": { }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dev-sbx/providers/Microsoft.Storage/storageAccounts/stdevscratch01",
+    "name": "stdevscratch01",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "westeurope",
+    "resourceGroup": "rg-dev-sbx",
+    "tags": { "env": "dev", "owner": "devteam" },
+    "properties": {
+      "minimumTlsVersion": "TLS1_2",
+      "allowBlobPublicAccess": false,
+      "publicNetworkAccess": "Enabled"
+    },
+    "sku": { "name": "Standard_GRS" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-legacy-misc/providers/Microsoft.Network/networkSecurityGroups/nsg-old-temp",
+    "name": "nsg-old-temp",
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "location": "westeurope",
+    "resourceGroup": "rg-legacy-misc",
+    "tags": { },
+    "properties": { "securityRules": [] }
+  }
+]

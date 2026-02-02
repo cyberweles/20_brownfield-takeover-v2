@@ -1,0 +1,30 @@
+[
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleAssignments/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "scope": "/subscriptions/00000000-0000-0000-0000-000000000000",
+    "roleDefinitionName": "Owner",
+    "principalType": "User",
+    "principalName": "founder@company.invalid"
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleAssignments/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "scope": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-apps",
+    "roleDefinitionName": "Contributor",
+    "principalType": "Group",
+    "principalName": "grp-apps-admins"
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleAssignments/cccccccc-cccc-cccc-cccc-cccccccccccc",
+    "scope": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-core",
+    "roleDefinitionName": "Reader",
+    "principalType": "ServicePrincipal",
+    "principalName": "sp-monitoring"
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleAssignments/dddddddd-dddd-dddd-dddd-dddddddddddd",
+    "scope": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-legacy-misc",
+    "roleDefinitionName": "Contributor",
+    "principalType": "User",
+    "principalName": "ex-employee@company.invalid"
+  }
+]

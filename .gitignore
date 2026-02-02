@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# venv
+.venv/
+
+# Reports (choose one strategy)
+# Option A: keep generated outputs committed (comment out below)
+# 04_reports/
+
+# OS
+.DS_Store
+Thumbs.db

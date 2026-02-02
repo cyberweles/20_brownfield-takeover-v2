@@ -1,0 +1,12 @@
+[
+  {
+    "scope": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-core/providers/Microsoft.Storage/storageAccounts/stprodcoredat01",
+    "diagnosticSettings": []
+  },
+  {
+    "scope": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-shared-ops/providers/Microsoft.OperationalInsights/workspaces/log-ops-shared",
+    "diagnosticSettings": [
+      { "name": "send-to-central-law", "workspaceId": "/subscriptions/000.../resourceGroups/rg-shared-ops/providers/Microsoft.OperationalInsights/workspaces/log-ops-shared" }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-core",
+    "name": "rg-prod-core",
+    "location": "westeurope",
+    "tags": { "env": "prod", "owner": "platform", "costCenter": "cc100", "service": "core" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod-apps",
+    "name": "rg-prod-apps",
+    "location": "westeurope",
+    "tags": { "env": "prod", "costCenter": "cc200" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dev-sbx",
+    "name": "rg-dev-sbx",
+    "location": "westeurope",
+    "tags": { "env": "dev", "owner": "devteam" }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-legacy-misc",
+    "name": "rg-legacy-misc",
+    "location": "westeurope",
+    "tags": { }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-shared-ops",
+    "name": "rg-shared-ops",
+    "location": "westeurope",
+    "tags": { "env": "shared", "owner": "ops", "costCenter": "cc999" }
+  }
+]

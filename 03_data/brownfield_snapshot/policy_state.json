@@ -1,0 +1,13 @@
+[
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyAssignments/pol-audit-tagging",
+    "name": "pol-audit-tagging",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "properties": {
+      "displayName": "Audit required tags on resource groups",
+      "enforcementMode": "DoNotEnforce",
+      "scope": "/subscriptions/00000000-0000-0000-0000-000000000000",
+      "parameters": { "tagName1": { "value": "owner" }, "tagName2": { "value": "costCenter" } }
+    }
+  }
+]
